@@ -67,3 +67,12 @@ resources:
         oauth2-configuration:
           redirect-uris:
             - https://ad338759trial-dev-risk-management.cfapps.us10-001.hana.ondemand.com/login/callback
+        role-collections:
+        - name: 'RiskManager-${space}'
+          description: Manage Risks
+          role-template-references:
+          - $XSAPPNAME.RiskManager
+        - name: 'RiskViewer-${space}'
+          description: View Risks
+          role-template-references:
+          - $XSAPPNAME.RiskViewer
