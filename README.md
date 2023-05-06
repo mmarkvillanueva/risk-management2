@@ -26,4 +26,21 @@ Learn more at https://cap.cloud.sap/docs/get-started/.
 
 
 ## Summary
-1. Added custom logic via risk-service.js to populate criticality property in the Risks entity
+1. Imported API_BUSINESS_PARTNER.edmx file from API Business Hub (under S/4HANA Cloud Product) to the root directory.
+2. Execute command "cds import <EDMX_FILE>" to generate the csn file and automatically update the package.json folder.
+3. Added external entity in schema.cds referencing to the csn file.
+4. Uncommented the bp association in Risks entity in schema.cds
+5. Unncommented the Business Partners Entity in service.cds
+6. Added apikey in the .env file
+7. Added logic in the service handler to perform API call during READ event.
+8. Added credentials/url and link to API Business Hub in the package.json
+9. Added @sap-cloud-sdk/http-client npm package
+10. Updated Risks csv file to include Business Partner
+11. Updated common.cds
+    a. Provide title for the bp property.
+    b. Annotation for Business Partners Entity. Hidding the BP Number
+12. Updated annotation.cds
+    a. Added bp as part of the line items annotation
+    b. Added bp as part of the Main FieldGroup in the object page.
+13. Updated risk-service.js to populate bp during READ event in the Risks entity    
+
