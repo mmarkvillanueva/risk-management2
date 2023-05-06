@@ -12,6 +12,7 @@ entity Risks : managed {
         //bp: Association to BusinessPartners;
         //You will need this definition in a later step
         impact : Integer;
+        criticality: Integer;
 }
 
 entity Mitigations : managed {

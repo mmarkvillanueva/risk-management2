@@ -26,12 +26,12 @@ Learn more at https://cap.cloud.sap/docs/get-started/.
 
 
 ## Summary
-1. Created schema.cds for the data definition
-    a. Notice the Association keywords
-    b. Notice the managed keyboard which automatically adds the createdAt and modifiedAt fields
+0. Added criticality in Risks entity in schema.cds
 
-2. Created risk-service.cds for the service definition
-    a. Notice the hasDraftEntity property due to the @odata.draft.enabled
+1. Generate UI via "Fiori Open Application Generator" from command pallete.
+    a. Notice the services.cds file generated under the app folder.
+    b. Notice the annotations.cds file generated under the app/risks folder.
 
-3. Provide mock data
-    a. Notice the miti_id column (because of the association)
+2. Create common.cds in app folder for common annotations. (To avoid redundancy). Reference this new annotation file to the services.cds file.
+
+3. Update annotation.cds for the list report UI annotations.
