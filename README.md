@@ -26,17 +26,4 @@ Learn more at https://cap.cloud.sap/docs/get-started/.
 
 
 ## Summary
-0. Added criticality in Risks entity in schema.cds
-
-1. Generate UI via "Fiori Open Application Generator" from command pallete.
-    a. Notice the services.cds file generated under the app folder.
-    b. Notice the annotations.cds file generated under the app/risks folder.
-
-2. Create common.cds in app folder for common annotations. (To avoid redundancy). Reference this new annotation file to the services.cds file.
-
-3. Update annotation.cds for the list report UI annotations.
-    a. Contains Annotation for Title, Description
-    b. Contains annotation for List Report
-    c. Contains annotation for object page w/ Facet & Field Group
-    d. Also Mitigation Description is displayed instead of the GUID
-    e. Value Help is also provideed fot eh Mitigation
+1. Added custom logic via risk-service.js to populate criticality property in the Risks entity
