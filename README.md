@@ -23,3 +23,7 @@ File or Folder | Purpose
 ## Learn More
 
 Learn more at https://cap.cloud.sap/docs/get-started/.
+
+
+## Summary
+1. Iniital creation of project via "Create from Project Template" and "CAP Service" option.
