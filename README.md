@@ -35,3 +35,8 @@ Learn more at https://cap.cloud.sap/docs/get-started/.
 2. Create common.cds in app folder for common annotations. (To avoid redundancy). Reference this new annotation file to the services.cds file.
 
 3. Update annotation.cds for the list report UI annotations.
+    a. Contains Annotation for Title, Description
+    b. Contains annotation for List Report
+    c. Contains annotation for object page w/ Facet & Field Group
+    d. Also Mitigation Description is displayed instead of the GUID
+    e. Value Help is also provideed fot eh Mitigation
