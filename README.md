@@ -23,3 +23,14 @@ File or Folder | Purpose
 ## Learn More
 
 Learn more at https://cap.cloud.sap/docs/get-started/.
+
+
+## Summary
+1. cds compile srv/ --to xsuaa > xs-security.json 
+    a. Recompile. xs-sercurity.json is updated.
+
+2. Manually added role collections in mta.yaml
+
+3. mbt build -t gen --mtar mta.tar
+
+4. cf deploy gen/mta.tar
