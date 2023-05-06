@@ -26,4 +26,12 @@ Learn more at https://cap.cloud.sap/docs/get-started/.
 
 
 ## Summary
-1. Iniital creation of project via "Create from Project Template" and "CAP Service" option.
+1. Created schema.cds for the data definition
+    a. Notice the Association keywords
+    b. Notice the managed keyboard which automatically adds the createdAt and modifiedAt fields
+
+2. Created risk-service.cds for the service definition
+    a. Notice the hasDraftEntity property due to the @odata.draft.enabled
+
+3. Provide mock data
+    a. Notice the miti_id column (because of the association)
