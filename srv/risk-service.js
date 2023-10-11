@@ -8,6 +8,7 @@ module.exports = cds.service.impl(async function () {
 
     // Define constants for the Risk annd Business Partners entities from the risk-service.cds file
     const { Risks, BusinessPartners } = this.entities;
+    const API_KEY = cds.env.apikey || process.env.apikey;
 
     /**
      * Set criticality after a READ operation on /risks
@@ -43,7 +44,7 @@ module.exports = cds.service.impl(async function () {
         return await BPsrv.transaction(req).send({
             query: req.query,
             headers: {
-                apikey: process.env.apikey
+                apikey: API_KEY
             }
         });
 

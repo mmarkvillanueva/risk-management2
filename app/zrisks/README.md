@@ -1,18 +1,18 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Wed Oct 11 2023 13:30:14 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Sat May 06 2023 02:49:26 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
-|**App Generator Version**<br>1.11.1|
+|**App Generator Version**<br>1.9.5|
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Template Used**<br>List Report Page V4|
 |**Service Type**<br>Local Cap|
 |**Service URL**<br>http://localhost:4004/service/risk/
 |**Module Name**<br>risks|
-|**Application Title**<br>App Title|
+|**Application Title**<br>RIsks|
 |**Namespace**<br>|
 |**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.119.0|
+|**UI5 Version**<br>1.113.0|
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
@@ -20,7 +20,7 @@
 
 ## risks
 
-A Fiori application.
+riskmanagement
 
 ### Starting the generated app
 
