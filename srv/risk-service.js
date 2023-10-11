@@ -75,7 +75,7 @@ module.exports = cds.service.impl(async function () {
 
         if (
             !req.query.SELECT.columns.find((column) =>
-                column.ref.find((ref) => ref == "bp_BusinessPartner")
+                column.ref?.find((ref) => ref == "bp_BusinessPartner")
             )
         ) {
             req.query.SELECT.columns.push({ ref: ["bp_BusinessPartner"] });
@@ -87,7 +87,7 @@ module.exports = cds.service.impl(async function () {
          */
         try {
 
-            res = await next();
+            let res = await next();
             res = Array.isArray(res) ? res : [res];
 
             await Promise.all(
