@@ -48,7 +48,7 @@ modules:
           ServiceKeyName: risk-management_html_repo_host-key
           sap.cloud.service: riskmanagement
         - Authentication: OAuth2UserTokenExchange
-          Name: riskmanagement_risk_management_auth
+          Name: risk-management-auth
           ServiceKeyName: risk-management-auth-key
           sap.cloud.service: riskmanagement
         existing_destinations_policy: ignore
