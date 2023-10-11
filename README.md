@@ -42,6 +42,10 @@ Learn more at https://cap.cloud.sap/docs/get-started/.
 5. Manually added oauth2-configuration in the mta.yaml
     a. Not sure about this
 
-6. cds add approuter --for production
-    a. Generated xs-app.json under the app folder.
-    b. Generated package.json under the app folder.
+6. Add managed router via configuration
+    a. Right-click mta.yaml and choose Create MTA Module from Template.
+    b. Choose Approuter Configuration.
+
+7. Deploy via right click mta.yaml deploy.
+    a. Build MTA Project
+    b. Deploy mtar
